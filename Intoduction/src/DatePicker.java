@@ -4,7 +4,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class DatePicker {
+public class DatePickerss {
 
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver;
