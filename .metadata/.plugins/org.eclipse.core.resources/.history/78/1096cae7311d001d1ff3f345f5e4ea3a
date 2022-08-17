@@ -1,0 +1,21 @@
+package e2eProject;
+
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+import pageObject.LandingPage;
+import resources.Base;
+
+public class Homepage extends Base {
+	
+	@Test
+	public void basePageNaviagation() throws IOException {
+		driver = initalizeDriver();
+		driver.get(prop.getProperty("url"));
+		
+		LandingPage l = new LandingPage();
+		l.getLogIn();
+	}
+
+}

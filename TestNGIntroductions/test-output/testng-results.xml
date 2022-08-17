@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="11" total="13" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-05T17:06:41 IST" name="Suite" finished-at="2022-08-05T17:06:41 IST" duration-ms="31">
+    <groups>
+      <group name="smoke">
+        <method signature="DayFour.mobileFour()[pri:0, instance:testPack.DayFour@2e222612]" name="mobileFour" class="testPack.DayFour"/>
+        <method signature="DayThree.homeLoan()[pri:0, instance:testPack.DayThree@31e5415e]" name="homeLoan" class="testPack.DayThree"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2022-08-05T17:06:41 IST" name="Test" finished-at="2022-08-05T17:06:41 IST" duration-ms="31">
+      <class name="testPack.DayThree">
+        <test-method signature="homeLoan()[pri:0, instance:testPack.DayThree@31e5415e]" started-at="2022-08-05T17:06:41 IST" name="homeLoan" finished-at="2022-08-05T17:06:41 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeLoan -->
+      </class> <!-- testPack.DayThree -->
+      <class name="testPack.DayFour">
+        <test-method signature="mobileFour()[pri:0, instance:testPack.DayFour@2e222612]" started-at="2022-08-05T17:06:41 IST" name="mobileFour" finished-at="2022-08-05T17:06:41 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobileFour -->
+      </class> <!-- testPack.DayFour -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

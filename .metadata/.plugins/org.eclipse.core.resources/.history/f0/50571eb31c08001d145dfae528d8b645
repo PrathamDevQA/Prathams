@@ -1,0 +1,45 @@
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class SelectDropdownFromSelectoptions {
+
+	public static void main(String[] args) {
+		WebDriver driver;
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+		driver.get("https://www.rahulshettyacademy.com/AutomationPractice/");
+		
+		driver.findElement(By.xpath("//*[@id='checkbox-example']/fieldset/label[2]")).click();
+		
+		System.out.println(driver.findElement(By.xpath("//*[@id='checkbox-example']/fieldset/label[2]")).getText());
+		
+		
+		
+//		WebElement dropdown =  driver.findElement(By.id("dropdown-class-example"));
+//		
+//		Select s = new Select(dropdown);
+//		s.selectByVisibleText(checkbox);
+//		driver.findElement(By.name("enter-name")).sendKeys(checkbox);
+//		driver.findElement(By.id("alertbtn")).click();
+//		
+//		String t = driver.switchTo().alert().getText();
+//		if(t.contains(checkbox)) {
+//			System.out.println("Alert message success");
+//		}else {
+//			System.out.println("Somthing went to wrong");
+//		}
+//		
+	
+	}
+
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-13T03:40:57 IST" name="Default suite" finished-at="2022-06-13T03:41:29 IST" duration-ms="31952">
+    <groups>
+    </groups>
+    <test started-at="2022-06-13T03:40:57 IST" name="Default test" finished-at="2022-06-13T03:41:29 IST" duration-ms="31952">
+      <class name="TestPages.ForgotUsernameTest">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:TestPages.ForgotUsernameTest@1189dd52]" started-at="2022-06-13T03:40:57 IST" name="setUP" finished-at="2022-06-13T03:41:00 IST" duration-ms="2580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method is-config="true" signature="openURL()[pri:0, instance:TestPages.ForgotUsernameTest@1189dd52]" started-at="2022-06-13T03:41:00 IST" name="openURL" finished-at="2022-06-13T03:41:19 IST" duration-ms="18747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURL -->
+        <test-method signature="verifyEmail()[pri:0, instance:TestPages.ForgotUsernameTest@1189dd52]" started-at="2022-06-13T03:41:19 IST" name="verifyEmail" finished-at="2022-06-13T03:41:29 IST" duration-ms="10370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmail -->
+        <test-method is-config="true" signature="tearsDown()[pri:0, instance:TestPages.ForgotUsernameTest@1189dd52]" started-at="2022-06-13T03:41:29 IST" name="tearsDown" finished-at="2022-06-13T03:41:29 IST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearsDown -->
+      </class> <!-- TestPages.ForgotUsernameTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

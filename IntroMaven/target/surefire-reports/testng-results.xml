@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-09T13:03:22 IST" name="Surefire suite" finished-at="2022-08-09T13:03:22 IST" duration-ms="28">
+    <groups>
+    </groups>
+    <test started-at="2022-08-09T13:03:22 IST" name="Surefire test" finished-at="2022-08-09T13:03:22 IST" duration-ms="28">
+      <class name="sampleTest.SeleniumTest">
+        <test-method signature="seleniumTest()[pri:0, instance:sampleTest.SeleniumTest@29d89d5d]" started-at="2022-08-09T13:03:22 IST" name="seleniumTest" finished-at="2022-08-09T13:03:22 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seleniumTest -->
+      </class> <!-- sampleTest.SeleniumTest -->
+      <class name="sampleTest.AppiumTest">
+        <test-method signature="appiumTest()[pri:0, instance:sampleTest.AppiumTest@1b6e1eff]" started-at="2022-08-09T13:03:22 IST" name="appiumTest" finished-at="2022-08-09T13:03:22 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appiumTest -->
+      </class> <!-- sampleTest.AppiumTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

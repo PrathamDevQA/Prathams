@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;log4j.xml&apos; to &apos;e2eProject/src/test/resources&apos;&#x0D;&#x0A;- Original project: &apos;MarkettimeQA&apos;&#x0D;&#x0A;- Destination element: &apos;e2eProject/src/test/resources&apos;&#x0D;&#x0A;- Original element: &apos;log4j.xml&apos;" description="Copy file" destination="=e2eProject/src\/test\/resources=/test=/true=/=/maven.pomderived=/true=/" element1="log4j.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1660708373157" units="0" version="1.0"/>
+</session>

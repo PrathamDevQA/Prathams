@@ -1,0 +1,48 @@
+package testOneFolder;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Iterator;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+import groovyjarjarpicocli.CommandLine.Help.Column;
+
+public class ExcelData {
+	
+	public static void main(String[] args) throws IOException {
+		
+		
+		FileInputStream fis = new FileInputStream("C:\\Users\\Pratham\\OneDrive - MarketTime\\Desktop\\TestOne.xlsx");
+		
+		XSSFWorkbook workbook = new XSSFWorkbook(fis);
+		
+		int sheets = workbook.getNumberOfSheets();
+		for(int i=0; i<sheets ; i++) {
+			if(workbook.getSheetName(i).equalsIgnoreCase("Sheet1")) {
+				XSSFSheet sheet= workbook.getSheetAt(i);
+				
+				Iterator<Row> rows = sheet.rowIterator();
+				Row firstRow = rows.next();
+				Iterator<Cell> ce= firstRow.cellIterator();
+				int k=0;
+				int coloumn = 0;
+				while(ce.hasNext()) {
+					Cell value = ce.next();
+					if(value.getStringCellValue().equalsIgnoreCase("Testcases")) {
+						coloumn=k;
+					}
+					k++;
+				}
+				System.out.println(coloumn);	
+			}
+			
+		}
+		
+		
+	}
+
+}

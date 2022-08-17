@@ -1,0 +1,28 @@
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SeclInto {
+
+	public static void main(String[] args) {
+		
+		
+		// TODO Auto-generated method stub
+		//Invoking Browser
+		
+		//Chromedriver.exe - > Chrome browser
+		System.setProperty("webdriver.chrome.driver","C:\\Exteranl Driver And Jars\\chromedriver.exe");
+	
+		//WebDriver.chrome.driver --> Value of path
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://rahulshettyacademy.com");
+		
+		String title = driver.getTitle();		
+		System.out.println(title);
+		
+		System.out.println(driver.getCurrentUrl());
+		driver.quit();
+
+	}
+
+}

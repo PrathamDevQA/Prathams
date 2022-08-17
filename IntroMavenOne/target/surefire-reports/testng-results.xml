@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-09T14:43:12 IST" name="Surefire suite" finished-at="2022-08-09T14:43:12 IST" duration-ms="38">
+    <groups>
+    </groups>
+    <test started-at="2022-08-09T14:43:12 IST" name="Surefire test" finished-at="2022-08-09T14:43:12 IST" duration-ms="38">
+      <class name="testOneFolder.AppiumTest">
+        <test-method signature="One()[pri:0, instance:testOneFolder.AppiumTest@33990a0c]" started-at="2022-08-09T14:43:12 IST" name="One" finished-at="2022-08-09T14:43:12 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- One -->
+      </class> <!-- testOneFolder.AppiumTest -->
+      <class name="testOneFolder.RestApiTest">
+        <test-method signature="One()[pri:0, instance:testOneFolder.RestApiTest@3d5c822d]" started-at="2022-08-09T14:43:12 IST" name="One" finished-at="2022-08-09T14:43:12 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- One -->
+        <test-method signature="Three()[pri:0, instance:testOneFolder.RestApiTest@3d5c822d]" started-at="2022-08-09T14:43:12 IST" name="Three" finished-at="2022-08-09T14:43:12 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Three -->
+      </class> <!-- testOneFolder.RestApiTest -->
+      <class name="testOneFolder.SeleniumTest">
+        <test-method signature="Five()[pri:0, instance:testOneFolder.SeleniumTest@6f46426d]" started-at="2022-08-09T14:43:12 IST" name="Five" finished-at="2022-08-09T14:43:12 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Five -->
+        <test-method signature="Four()[pri:0, instance:testOneFolder.SeleniumTest@6f46426d]" started-at="2022-08-09T14:43:12 IST" name="Four" finished-at="2022-08-09T14:43:12 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Four -->
+      </class> <!-- testOneFolder.SeleniumTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

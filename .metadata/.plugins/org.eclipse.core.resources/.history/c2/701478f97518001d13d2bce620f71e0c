@@ -1,0 +1,20 @@
+package testOneFolder;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelData {
+	
+	public static void main(String[] args) throws IOException {
+		
+		
+		FileInputStream fis = new FileInputStream("C:\\Users\\Pratham\\OneDrive - MarketTime\\Desktop\\TestOne.xlsx");
+		
+		XSSFWorkbook workbok = new XSSFWorkbook(fis);
+		
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class SelectDropdownFromSelectoptions {
+
+	public static void main(String[] args) {
+		WebDriver driver;
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+
+		driver.get("https://www.rahulshettyacademy.com/AutomationPractice/");
+		
+		WebElement checkbox = driver.findElement(By.id("checkbox-example"));
+
+		System.out.println(checkbox.findElements(By.tagName("label")).size());
+		
+		for(int i=0; i<checkbox.findElements(By.tagName("label")).size();i++) {
+			checkbox.findElement(By.tagName("label")).getText();
+		}
+	}
+
+}

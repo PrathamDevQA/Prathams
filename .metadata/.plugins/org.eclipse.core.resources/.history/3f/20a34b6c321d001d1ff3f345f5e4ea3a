@@ -1,0 +1,15 @@
+package pageObject;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import resources.Base;
+
+public class LandingPage extends Base {
+
+	By signIn = By.cssSelector("a[href*='sign in']");
+	
+	public WebElement getLogIn() {
+		return driver.findElement(signIn);
+	}
+}

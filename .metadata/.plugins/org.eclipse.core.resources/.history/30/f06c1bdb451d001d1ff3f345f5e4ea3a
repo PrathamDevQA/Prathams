@@ -1,0 +1,37 @@
+package pageObject;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import resources.Base;
+
+public class ValidateTitle extends Base{
+	
+	By email = By.id("user_email");
+	
+	By password= By.id("user_password");
+	
+	By logIn=By.name("commit");
+	
+	
+	public ValidateTitle(WebDriver driver) {
+		this.driver= driver;
+	}
+	
+	public WebElement getEmail() {
+		return driver.findElement(email);
+	}
+	
+	public WebElement getPassword() {
+		return driver.findElement(password);
+	}
+	
+	public WebElement getLogin() {
+		return driver.findElement(logIn);
+	}
+	
+	
+
+
+}

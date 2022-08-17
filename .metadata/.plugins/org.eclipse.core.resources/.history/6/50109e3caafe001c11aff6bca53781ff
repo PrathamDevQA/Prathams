@@ -1,0 +1,41 @@
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class SeclInto {
+
+	public static void main(String[] args) {
+		
+		
+		// TODO Auto-generated method stub
+		//Invoking Browser
+		
+		//Chromedriver.exe - > Chrome browser
+			//System.setProperty("webdriver.chrome.driver","C:\\Exteranl Driver And Jars\\chromedriver.exe");			
+		//WebDriver.chrome.driver --> Value of path
+			//WebDriver driver = new ChromeDriver();
+
+	
+		
+		//Firefox driver
+//		System.setProperty("webdriver.gecko.driver", "C:\\Exteranl Driver And Jars\\geckodriver.exe");
+//		WebDriver driver = new FirefoxDriver(); 		
+		
+		//Edge driver
+		System.getProperty("webdriver.edge.driver", "C:\\Exteranl Driver And Jars\\msedgedriver.exe");
+		WebDriver driver = new EdgeDriver();
+		
+		driver.get("https://rahulshettyacademy.com");
+		
+		
+		String title = driver.getTitle();		
+		System.out.println(title);
+		
+		System.out.println(driver.getCurrentUrl());
+	
+
+	}
+
+}

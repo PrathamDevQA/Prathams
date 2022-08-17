@@ -1,0 +1,33 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class GetAllLinks {
+
+	public static void main(String[] args) {
+		WebDriver driver;
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		driver.get("https://www.rahulshettyacademy.com/AutomationPractice/");
+		
+		System.out.println(driver.findElements(By.tagName("a")).size());
+		
+		WebElement footerDriver =  driver.findElement(By.id("gf-BIG"));
+		
+		System.out.println(footerDriver.findElements(By.tagName("a")).size());
+		
+		WebElement coloumDriver = footerDriver.findElement(By.xpath("//tbody/tr/td[1]/ul[1]"));
+		
+		System.out.println(coloumDriver.findElement(By.tagName("a")));
+		
+		
+		
+		
+	}
+
+}

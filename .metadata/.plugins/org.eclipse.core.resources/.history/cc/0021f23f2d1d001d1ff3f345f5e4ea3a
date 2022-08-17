@@ -1,0 +1,18 @@
+package e2eProject;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+public class Base {
+
+	public void initalizeDriver() throws IOException {
+		Properties prop = new Properties(); 
+		FileInputStream fis = new FileInputStream("C:\\MarkettimeQA\\e2eProject\\Configrtaions\\data.properties");
+		prop.load(fis);
+		prop.getProperty("browser");
+		
+	}
+	
+}
